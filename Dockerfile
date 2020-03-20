@@ -41,6 +41,6 @@ RUN python3 -m pip install robotframework-pabot
 
 #COPY  *.tar /usr/local/bin/
 #COPY  *.robot  /usr/local/bin/
-COPY docker-entrypoint.sh /usr/local/bin/
+#COPY docker-entrypoint.sh /usr/local/bin/
 RUN ln -s /usr/local/bin/docker-entrypoint.sh / # backwards compat
 ENTRYPOINT ["docker-entrypoint.sh"]
