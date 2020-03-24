@@ -36,6 +36,7 @@ RUN python3 -m pip install robotframework-seleniumlibrary
 RUN python3 -m pip install Robotframework-requests
 RUN python3 -m pip install robotframework-pabot
 
+ADD ./usr/local/bin
 
 #CMD ["robot", "/usr/src/project/sample-0-trivial/sample-0-trivial.txt"]
 
