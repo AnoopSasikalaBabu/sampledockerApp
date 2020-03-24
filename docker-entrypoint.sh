@@ -8,8 +8,8 @@
 echo "Executing tests"
 #pabot --processes 3 --outputdir ./results ./robot/tests/
 #pabot --processes 3 --outputdir /usr/local/bin/rslt  Cust*.robot
-cd  /usr/local/bin/
-tar xvzf UIV3.tar
+#cd  /usr/local/bin/
+#tar xvzf UIV3.tar
 
 cd  /usr/local/bin/UIV3/src
 pabot --processes 1 --outputdir /usr/local/bin/rslt --output outputs01.xml  Cust*.robot

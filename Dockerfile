@@ -36,12 +36,12 @@ RUN python3 -m pip install robotframework-seleniumlibrary
 RUN python3 -m pip install Robotframework-requests
 RUN python3 -m pip install robotframework-pabot
 
-ADD ./usr/local/bin
+ADD . /usr/local/bin
 
 #CMD ["robot", "/usr/src/project/sample-0-trivial/sample-0-trivial.txt"]
 
 #COPY  *.tar /usr/local/bin/
 #COPY  *.robot  /usr/local/bin/
 #COPY docker-entrypoint.sh /usr/local/bin/
-#RUN ln -s /usr/local/bin/docker-entrypoint.sh / # backwards compat
-#ENTRYPOINT ["docker-entrypoint.sh"]
+RUN ln -s /usr/local/bin/docker-entrypoint.sh / # backwards compat
+ENTRYPOINT ["docker-entrypoint.sh"]
