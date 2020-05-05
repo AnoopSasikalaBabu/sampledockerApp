@@ -40,9 +40,5 @@ do
   cd /usr/local/bin/Execution_Results	
   rebot --merge outputs01.xml outputs01re.xml
   cd  /usr/local/bin/UIV3/src
-  if [ $? -eq 0 ]
-  then
-    echo "All tests passed"
-    break
-  fi
+ 
 done
