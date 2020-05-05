@@ -37,7 +37,8 @@ Headless Chrome - Create Webdriver
     [Tags]  webui
    # Maximize Browser Window
 
-    Go to     https://edition.cnn.com/
+    #Go to     https://edition.cnn.com/
+     Go to     https://www.qualcomm.com/
     Capture Page Screenshot    
     maximize browser window
     click element    (//span[text()='Edition'])[1]
