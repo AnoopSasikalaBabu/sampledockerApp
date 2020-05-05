@@ -19,19 +19,11 @@ then
   exit 0
 fi
 
-for COUNT in 1 2 3
+#for COUNT in 1 2 3
+for COUNT in 1
 do
   echo "Some tests failed, starting $COUNT. rerun"
-  
-  #echo "Resetting database"
-  # wget --spider -q -T 90 $RESET_DB
-
-  #if [ $? -ne 0 ]
-  #then
-    #echo "Error resetting database before rerun"
-    #exit 1
-  #fi
-
+ 
   echo "Executing failed tests"
   cd  /usr/local/bin/UIV3/src
   pabot --processes 2 --rerunfailed /usr/local/bin/Execution_Results/outputs01.xml --outputdir /usr/local/bin/Execution_Results --output outputs01re.xml  Cust*.robot 
