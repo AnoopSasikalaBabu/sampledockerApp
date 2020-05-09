@@ -10,7 +10,7 @@ echo "Executing tests"
 #robot  --outputdir /usr/local/bin/rslt  Custom_stats_UI.robot
 
 cd  /usr/local/bin/UIV3/src
-pabot --processes 1 --outputdir /usr/local/bin/Execution_Results --output outputs01.xml  Cust*.robot
+pabot --processes 6 --outputdir /usr/local/bin/Execution_Results --output outputs01.xml  Cust*.robot
 
 if [ $? -eq 0 ]
 then
@@ -26,7 +26,7 @@ do
  
   echo "Executing failed tests"
   cd  /usr/local/bin/UIV3/src
-  pabot --processes 2 --rerunfailed /usr/local/bin/Execution_Results/outputs01.xml --outputdir /usr/local/bin/Execution_Results --output outputs01re.xml  Cust*.robot 
+  pabot --processes 3 --rerunfailed /usr/local/bin/Execution_Results/outputs01.xml --outputdir /usr/local/bin/Execution_Results --output outputs01re.xml  Cust*.robot 
 
   echo "Merging results"
   cd /usr/local/bin/Execution_Results	
