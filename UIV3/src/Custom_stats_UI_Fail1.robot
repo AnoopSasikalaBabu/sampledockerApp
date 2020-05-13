@@ -7,7 +7,7 @@ Library    OperatingSystem
 
 Test Setup   Test_setup
 
-#Suite Teardown    Close All Browsers
+Suite Teardown    Close All Browsers
 
 
 
