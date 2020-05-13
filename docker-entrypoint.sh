@@ -15,7 +15,7 @@ pabot --processes 2 --outputdir /usr/local/bin/Execution_Results --output output
 if [ $? -eq 0 ]
 then
   echo "Tests successful, skipping rerun"
-  sleep 200
+  #sleep 200
   exit 0
 fi
 
@@ -34,3 +34,4 @@ do
   cd  /usr/local/bin/UIV3/src
  
 done
+sleep 200
